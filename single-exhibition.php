@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 <a href='/'><h1 id='title'>as it stands . la</h1></a><br>
-<a href='/exhibitions/'><h1 id='exhibitions'>exhibitionss</h1></a>
+<a href='/exhibitions/'><h1 id='exhibitions'>exhibitions</h1></a>
 <div id='content'>
 <?php if ( have_posts() ) while ( have_posts() ) : the_post();
 	$images = get_field('images');
