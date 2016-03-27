@@ -170,7 +170,7 @@ function my_custom_dashboard_widgets() {
 
 function remove_menus () {
 global $menu;
-	$restricted = array(__('Posts'),  __('Pages'));
+	$restricted = array(__('Posts'));
 	end ($menu);
 	while (prev($menu)){
 		$value = explode(' ',$menu[key($menu)][0]);
