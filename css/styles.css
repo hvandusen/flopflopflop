@@ -194,7 +194,7 @@ body { margin: -2px; }
 
 .poster { width: 45%; margin-right: 2.5%; margin-left: 2.5%; }
 
-#address { padding: 1%; width: 100%; position: static; bottom: 0; text-align: center; font-size: 1em; font-weight: 600; font-family: TimesNewRoman; }
+#address { padding: 1%; padding-bottom: 70px; width: 100%; position: static; bottom: 0; text-align: center; font-size: 1em; font-weight: 600; font-family: TimesNewRoman; }
 
 #aa { text-decoration: line-through; }
 

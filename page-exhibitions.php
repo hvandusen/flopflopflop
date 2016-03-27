@@ -35,7 +35,7 @@
 					$end = strtolower(get_field('end_date'));
 							?>
 								<a class='exhib'>
-									<a href='<?php echo get_permalink(); ?>'><?php echo strtoupper(get_the_title()); ?></a>
+									<a href='<?php echo get_permalink(); ?>'>  <?php echo strtoupper(get_the_title()); ?></a>
 									<?php echo $start . '-' . $end; ?>
 								</a>
 				<?php endwhile; ?>
