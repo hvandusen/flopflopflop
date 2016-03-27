@@ -202,4 +202,6 @@ body { margin: -2px; }
 
 .upcoming { margin-bottom: 20px; }
 
+.exh-title { width: 100%; font-size: 1.2em; text-align: center; margin: 4% 0; }
+
 @media screen and (max-width: 600px) { #address { position: static; } }

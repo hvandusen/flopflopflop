@@ -2,6 +2,7 @@
 <a href='/'><h1 id='title'>as it stands . la</h1></a><br>
 <a href='/exhibitions/'><h1 id='exhibitions'>exhibitions</h1></a>
 <div id='content'>
+	<div class='exh-title'><?php the_title(); ?></div>
 <?php if ( have_posts() ) while ( have_posts() ) : the_post();
 	$images = get_field('images');
 		if(is_array($images) && !empty($images)){
