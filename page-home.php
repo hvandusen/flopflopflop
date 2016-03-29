@@ -3,7 +3,7 @@
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
   <script src="http://w.soundcloud.com/player/api.js"></script>
   <script>
-  var total_playlists = 1;
+  var total_playlists = 1; 
    $(document).ready(function() {
      var widget = SC.Widget(document.getElementById('soundcloud_widget'));
      widget.bind(SC.Widget.Events.READY, function() {
