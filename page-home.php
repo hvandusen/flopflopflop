@@ -18,7 +18,7 @@
        });
 
      });
-     $('button, #soundcloud_widget').hide();/*.click(function() {
+     $('#soundcloud_widget').hide();/*.click(function() {
        widget.toggle();
        widget.seekTo(100000);
      });*/
