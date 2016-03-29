@@ -1,6 +1,11 @@
 (function ($) {
 
 	$(document).ready(function(){
-		$('#myCanvas').css('z-index') !== '-1' && $('#myCanvas').css('z-index','-1');
+
+		var iframeElement   = $('#frame');
+		console.log(iframeElement);
+		var widget = SC.Widget(iframeElement);
+		console.dir(widget)
+
 	});
 })(jQuery);

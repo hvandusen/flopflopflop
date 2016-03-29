@@ -1,1 +1,1 @@
-!function($){$(document).ready(function(){"-1"!==$("#myCanvas").css("z-index")&&$("#myCanvas").css("z-index","-1")})}(jQuery);
+!function($){$(document).ready(function(){var o=$("#frame");console.log(o);var e=SC.Widget(o);console.dir(e)})}(jQuery);

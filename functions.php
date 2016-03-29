@@ -3,10 +3,10 @@ function chipsScripts() {
 	if (!is_admin()) {
 		wp_register_script('libsJS',get_bloginfo('template_directory') . '/js/compressed/libs.js');
 		wp_enqueue_script('libsJS');
-		wp_register_script('paper',get_bloginfo('template_directory') . '/js/paper.js');
+		wp_register_script('paper',get_bloginfo('template_directory') . '/js/api.js');
 		wp_enqueue_script('paper');
-		wp_register_script('secondary',get_bloginfo('template_directory') . '/js/secondary.js');
-		wp_enqueue_script('secondary');
+		wp_register_script('secondary',get_bloginfo('template_directory') . '/js/soundcloud.player.api.js');
+		//wp_enqueue_script('secondary');
 		wp_register_script('scriptsJS',get_bloginfo('template_directory') . '/js/project.js');
 		wp_enqueue_script('scriptsJS');
 	}

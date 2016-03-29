@@ -3,7 +3,6 @@
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
   <script src="http://w.soundcloud.com/player/api.js"></script>
   <script>
-  var total_playlists = 1;
    $(document).ready(function() {
      var widget = SC.Widget(document.getElementById('soundcloud_widget'));
      widget.bind(SC.Widget.Events.READY, function() {
@@ -27,7 +26,7 @@
 
 
   <iframe id="soundcloud_widget"
-      src="http://w.soundcloud.com/player/?url=https://soundcloud.com/hvandusen/sets/jammers&show_artwork=false&liking=false&sharing=false&start_track=1"
+      src="http://w.soundcloud.com/player/?url=https://soundcloud.com/hvandusen/tape-jammers&show_artwork=false&liking=false&sharing=false"
       width="420"
       height="120"
       frameborder="no"></iframe>

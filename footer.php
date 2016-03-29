@@ -1,10 +1,4 @@
-<div id='address'>
-	as it stands &#8226;
-	2601 pasadena avenue &#8226;
-	los angeles, ca &#8226;
-asitstands.la@gmail.com &#8226;
-open saturdays 1-6pm and by appointment
-</div>
+
 </div>
 
 <footer>
