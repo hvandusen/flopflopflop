@@ -1,1 +1,0 @@
-!function($){$(document).ready(function(){var o=$("#frame");console.log(o);var e=SC.Widget(o);console.dir(e)})}(jQuery);
