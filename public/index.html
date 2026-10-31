@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>flopflopflop</title>
+  <link rel="stylesheet" href="/style.css">
+  <script src="/jquery.min.js"></script>
+  <script src="/paper.js"></script>
+  <script type="text/paperscript" src="/gradient.js" canvas="myCanvas"></script>
+</head>
+<body>
+  <div id="main" role="main">
+    <canvas id="myCanvas" resize></canvas>
+    <div id="container">
+      <h1 id="title">flopflopflop</h1>
+      <div id="content">
+        <p>hey whats up. this is a random spot in tha tape jammers</p>
+        <p class="buttons">
+          <button id="flop" disabled>loading…</button>
+          <button id="playpause" disabled>play</button>
+        </p>
+        <p id="now">&nbsp;</p>
+      </div>
+    </div>
+  </div>
+
+  <iframe id="soundcloud_widget" allow="autoplay"
+    src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/hvandusen/sets/jammers&auto_play=false&show_artwork=false&liking=false&sharing=false&buying=false&download=false&show_comments=false"
+    width="420" height="120" frameborder="no"></iframe>
+
+  <script src="https://w.soundcloud.com/player/api.js"></script>
+  <script src="/flop.js"></script>
+</body>
+</html>
