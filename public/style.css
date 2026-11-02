@@ -37,16 +37,6 @@ body {
   margin: 1em;
 }
 
-/* Photos down the middle */
-.content {
-  text-align: center;
-  margin-bottom: 8em;
-}
-.content img {
-  max-width: 50%;
-  margin: 2em auto;
-}
-
 /* Player box, bottom right */
 .display {
   position: fixed;
@@ -74,13 +64,6 @@ body {
 @media (max-width: 600px) {
   #background {
     background-image: none;
-  }
-
-  .content {
-    margin-top: 10em;
-  }
-  .content .item {
-    max-width: none;
   }
 
   .display {
