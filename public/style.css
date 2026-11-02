@@ -1,29 +1,123 @@
-/* From the flopflopflop WordPress theme (css/styles.css). */
-@font-face { font-family: Iowan; src: url("/fonts/iowan.ttf") format("truetype"); }
+/* Matches the flopflopflop WordPress theme (stuff/flopflopflop-wp-theme/sass/styles.scss). */
+@font-face {
+  font-family: "Jokerman";
+  src: url("/fonts/Jokerman-Regular.ttf") format("truetype");
+}
 
-* { font-family: Iowan, Helvetica, sans-serif; font-weight: bold; letter-spacing: 1.1px; box-sizing: border-box; }
+body {
+  margin: 0;
+  min-height: 100vh;
+}
 
-html { font-size: 100%; line-height: 1.5em; }
-body { margin: -2px; color: #333; }
+#background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-image: url("/img/fgLogo-web.jpg");
+  background-size: cover;
+  z-index: -1;
+}
 
-#container { position: relative; top: 0; width: 100%; z-index: 1; min-height: 90vh; }
-#myCanvas { z-index: 6; position: fixed; opacity: .2; pointer-events: none; top: 0; left: 0; width: 100vw; height: 100vh; }
+/* The player is only used through its API, so keep it off screen. */
+#soundcloud_widget {
+  position: absolute;
+  top: -5000px;
+}
 
-#title { font-size: 3.5em; line-height: 1.2em; display: inline-block; text-align: left; padding-left: 4%; text-decoration: underline; margin: .6em 0; }
-#content { text-align: center; margin-bottom: 5%; font-size: 1.5em; padding: 0 16px; }
-
-.buttons { margin: 1.5em 0; }
-button {
-  font: inherit;
-  font-size: 1.4em;
-  padding: .3em 1em;
-  margin: .2em;
+/* Animated cowboy, top left */
+.animateSvg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 80px;
   background: white;
-  color: #333;
-  border: 2px solid #333;
+  padding: 1em;
+  margin: 1em;
+}
+
+/* Photos down the middle */
+.content {
+  text-align: center;
+  margin-bottom: 8em;
+}
+.content img {
+  max-width: 50%;
+  margin: 2em auto;
+}
+
+/* Player box, bottom right */
+.display {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  font-family: Jokerman, fantasy;
+  display: inline;
+  padding: 1em;
+  background: #aaffee;
+}
+.display p {
+  display: inline;
+}
+.display button {
+  margin: 1em 0;
   cursor: pointer;
 }
-button:disabled { opacity: .5; cursor: default; }
-#now { font-size: .8em; min-height: 1.5em; }
+.display button:disabled {
+  cursor: default;
+}
+.display .icon {
+  display: none;
+}
 
-#soundcloud_widget { position: absolute; width: 1px; height: 1px; left: -9999px; top: 0; border: 0; }
+@media (max-width: 600px) {
+  #background {
+    background-image: none;
+  }
+
+  .content {
+    margin-top: 10em;
+  }
+  .content .item {
+    max-width: none;
+  }
+
+  .display {
+    width: 100%;
+    padding: 1em 0;
+    text-align: center;
+  }
+  .display button span {
+    display: none;
+  }
+
+  /* Buttons turn into round dots on the right */
+  .display button {
+    width: 40px;
+    height: 40px;
+    margin: 0 1em 0 0;
+    padding: 0;
+    border-radius: 100%;
+    border: none;
+    outline: none;
+    float: right;
+    color: white;
+    font-size: 1em;
+  }
+  .display button:hover,
+  .display button:focus {
+    transition: all .4s;
+    background: linear-gradient(45deg, blue, red);
+  }
+  .display #pause {
+    background: green;
+  }
+  .display #playpause {
+    background: #333;
+  }
+  .display .icon {
+    display: inline;
+    font-weight: normal;
+  }
+}

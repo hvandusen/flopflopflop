@@ -3,25 +3,27 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="The Flower Girl online radiostation.">
   <title>flopflopflop</title>
   <link rel="stylesheet" href="/style.css">
-  <script src="/jquery.min.js"></script>
-  <script src="/paper.js"></script>
-  <script type="text/paperscript" src="/gradient.js" canvas="myCanvas"></script>
 </head>
 <body>
   <div id="main" role="main">
-    <canvas id="myCanvas" resize></canvas>
-    <div id="container">
-      <h1 id="title">flopflopflop</h1>
-      <div id="content">
-        <p>hey whats up. this is a random spot in tha tape jammers</p>
-        <p class="buttons">
-          <button id="flop" disabled>loading…</button>
-          <button id="playpause" disabled>play</button>
-        </p>
-        <p id="now">&nbsp;</p>
-      </div>
+    <div id="background"></div>
+
+    <object class="animateSvg" id="my-svg" type="image/svg+xml" data="/img/cowboy-01.svg" aria-hidden="true"></object>
+
+    <div class="display">
+      <p>flop flop flop</p>
+      <span><input id="volume" type="range" value="75" min="0" max="100" step="1" aria-label="volume"></span>
+      <button id="playpause" disabled aria-label="play"><b class="icon">&#9654;</b><span>play</span></button>
+      <button id="pause" disabled aria-label="Gimme somethin else doe!"><span>loading…</span></button>
+    </div>
+
+    <div class="content">
+      <div class="item"><img src="/img/flower-girl-1.jpg" alt=""></div>
+      <div class="item"><img src="/img/flower-girl-2.jpg" alt=""></div>
+      <div class="item"><img src="/img/flower-girl-3.jpg" alt=""></div>
     </div>
   </div>
 
@@ -30,6 +32,7 @@
     width="420" height="120" frameborder="no"></iframe>
 
   <script src="https://w.soundcloud.com/player/api.js"></script>
+  <script src="/js/vivus.js"></script>
   <script src="/flop.js"></script>
 </body>
 </html>
